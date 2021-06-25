@@ -7,5 +7,14 @@ describe('Galatic', () => {
     expect(andrew.lifeExpectancy).toEqual(78.7);
   });
 
+  test('Mercury function should convert age on Earth to age on Mercury', () => {
+    const andrew = new Galatic(1); 
+    expect(andrew.mercury()).toEqual("4.17");
+  });
+
+  test('venus function should convert age on Earth to age on Venus', () => {
+    const andrew = new Galatic(10); 
+    expect(andrew.venus()).toEqual("16.13");
+  });
 
 });
