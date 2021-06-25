@@ -1,11 +1,11 @@
-# PROJECT NAME
+# SUPER GALATIC AGE CALCULATOR
 ## By Andrew Giang
 
 ---
 
 ### Project Description
 
-This project is a web application that DESCRIPTION
+##### This project is a web application that will calculate your age in other planetary years. It will also tell the user some facts about life expectancy
 ---
 ### Tech Stack
 1. HTML5+CSS3
@@ -18,39 +18,29 @@ This project is a web application that DESCRIPTION
 8. Jest testing
 ---
 
-### Project Build Available At:
-
-[BUILD URL](BUILD URL)
-
----
 ### Installation Instructions
-1. Clone this repo: `git clone https://github.com/Userneme/REPO URL`
-2. Enter new directory `cd REPO DIR`
-3. Install dependencies with `npm install`
-4. To run it locally, use the npm dev command `npm run start:dev`
-5. Open your web browser and navigate to http://localhost:9001
-6. For a production build, use `npm run build`
+1. Visit [this webpage](https://giang184.github.io/pizza-hot/). 
+2. Or clone [this]( https://github.com/giang184/pizza-hot) repository to your desktop
+3. Enter new directory `cd REPO DIR`
+4. Install dependencies with `npm install`
+5. To run it locally, use the npm dev command `npm run start`
+6. Open your web browser and navigate to http://localhost:1111
+7. For a production build, use `npm run build`
 ---
 ### Known Issues:
-1. NO KNOWN ISSUES
-2. Please open a pull request if you have any issues!
+* NO KNOWN ISSUES
 ---
 ### Test Suite/Specification
 
 > See also [the Jest Test File](TESTSURL) for Jest Test Suite which includes 14 passing tests. View Test Results from Project Directory by Running `yarn run test` or if you prefer npm `npm run test`
 
-```
-Describe: TESTS
 
-```
----
-### License is GPLv3 and I make no claim to copyright. 
-<br />
 
-> You can't steal what is freely given. Enjoy!
+## License
 
-<br />
-<br />
-<br />
-<br />
+* _[MIT](https://opensource.org/licenses/MIT)_
+
+## Contact Information
+
+* _Andrew Giang giang184@gmail.com_
 

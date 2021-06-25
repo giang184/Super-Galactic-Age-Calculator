@@ -12,8 +12,6 @@ const calculateAge = (date) => {
   return (yearDifference + monthDifference/12 + dayDifference/365).toFixed(2);
 }
 
-
-
 $(document).ready(function () {
   $("form#galatic").submit(function (event) {
     event.preventDefault();
@@ -25,7 +23,6 @@ $(document).ready(function () {
     }
 
     let myG = new Galatic(calculateAge(array));
-
 
     $("#result").html(`
     you are ${myG.age} years old in Earth years.<br>
