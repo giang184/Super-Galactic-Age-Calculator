@@ -29,7 +29,7 @@ export class Galatic {
       old /=.24; 
 
       if(young>0) {
-        return `You have ${young.toFixed(2)} years left to live on Mercury`;
+        return `You have ${young.toFixed(2)} Mercury years left to live on Mercury`;
       }
       else {
         return `You have exceeded your left expectancy by ${old.toFixed(2)} Mercury years.`; 
@@ -39,7 +39,7 @@ export class Galatic {
       young /= .62;
       old /= .62; 
       if(young>0){
-        return `You have ${young.toFixed(2)} years left to live on Venus`;
+        return `You have ${young.toFixed(2)} Venus years left to live on Venus`;
       }
       else {
         return `You have exceeded your left expectancy by ${old.toFixed(2)} Venus years.`; 
@@ -49,7 +49,7 @@ export class Galatic {
       young /= 1.88;
       old /= 1.88; 
       if(young>0){
-        return `You have ${young.toFixed(2)} years left to live on Mars`;
+        return `You have ${young.toFixed(2)} Mars years left to live on Mars`;
       }
       else {
         return `You have exceeded your left expectancy by ${old.toFixed(2)} Mars years.`; 
@@ -59,7 +59,7 @@ export class Galatic {
       young /= 11.86;
       old /= 11.86; 
       if(young>0){
-        return `You have ${young.toFixed(2)} years left to live on Jupiter`;
+        return `You have ${young.toFixed(2)} Jupiter years left to live on Jupiter`;
       }
       else {
         return `You have exceeded your left expectancy by ${old.toFixed(2)} Jupiter years.`; 
@@ -67,7 +67,7 @@ export class Galatic {
     }
     else {
       if(young>0){
-        return `You have ${young.toFixed(2)} years left to live on Earth`;
+        return `You have ${young.toFixed(2)} Earth years left to live on Earth`;
       }
       else {
         return `You have exceeded your left expectancy by ${old.toFixed(2)} Earth years.`; 

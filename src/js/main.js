@@ -11,7 +11,9 @@ const calculateAge = (date) => {
   let dayDifference = today.getDate() - date[2];
   return (yearDifference + monthDifference/12 + dayDifference/365).toFixed(2);
 }
-// let myG = new Galatic();
+
+
+
 $(document).ready(function () {
   $("form#galatic").submit(function (event) {
     event.preventDefault();
@@ -22,10 +24,25 @@ $(document).ready(function () {
       array[i]=parseInt(array[i]);
     }
 
-    
+    let myG = new Galatic(calculateAge(array));
 
 
-    $("#result").text(`you are ${calculateAge(array)} years old in Earth year`);
-
+    $("#result").html(`
+    you are ${myG.age} years old in Earth years.<br>
+    ${myG.yearsLeft("Earth")}<br>
+    <br>
+    you are ${myG.mercury()} years old in Mercury years.<br>
+    ${myG.yearsLeft("Mercury")}<br>
+    <br>
+    you are ${myG.venus()} years old in Venus years.<br>
+    ${myG.yearsLeft("Venus")}<br>
+    <br>
+    you are ${myG.mars()} years old in Mars years.<br>
+    ${myG.yearsLeft("Mars")}<br>
+    <br>
+    you are ${myG.jupiter()} years old in Jupiter years.<br>
+    ${myG.yearsLeft("Jupiter")}<br>
+    `);
+    $("#bottom").show();
   });
 });
