@@ -2,7 +2,7 @@ export class Galatic {
 
   constructor(age) {
     this.age = age;
-    this.lifeExpectancy = 78.7;
+    this.lifeExpectancy = 79;
   }
 
   mercury() {
@@ -19,5 +19,16 @@ export class Galatic {
 
   jupiter() {
     return (this.age/11.86).toFixed(2);
+  }
+
+  yearsLeftOnEarth() {
+    const temp = this.lifeExpectancy - this.age;
+    const over = this.age - this.lifeExpectancy;
+    if(temp>0){
+      return `You have ${temp} years left to live on Earth`;
+    }
+    else {
+      return `You have exceeded your left expectancy by ${over} years.`; 
+    }
   }
 }
