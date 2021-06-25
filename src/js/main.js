@@ -9,7 +9,26 @@ const calculateAge = (date) => {
   let yearDifference = today.getFullYear() - date[0];
   let monthDifference = today.getMonth() + 1 - date[1];
   let dayDifference = today.getDate() - date[2];
-  return (yearDifference + monthDifference/12 + dayDifference/365).toFixed(2);
+  return (yearDifference + monthDifference/12 + dayDifference/365);
+}
+const nextBirthday = (age, planet) => {
+
+  let days = age * 365; 
+  let leftOver = 0;
+  let someDate = new Date();
+  if(planet === "Mercury") {
+    leftOver = parseInt(days)%88;
+    someDate.setDate(someDate.getDate() + (88-leftOver));
+  }
+  else {
+    leftOver = parseInt(days)%365;
+    someDate.setDate(someDate.getDate() + (365-leftOver));
+  }
+
+  
+  
+
+  return `${someDate.getMonth() + 1}-${someDate.getDate()}-${someDate.getFullYear()}`;
 }
 
 $(document).ready(function () {
@@ -25,18 +44,20 @@ $(document).ready(function () {
     let myG = new Galactic(calculateAge(array));
 
     $("#result").html(`
-    you are ${myG.age} years old in Earth years.<br>
+    you are ${myG.age.toFixed(2)} years old in Earth years.<br>
     ${myG.yearsLeft("Earth")}<br>
-    <br>
+    Due to the weird leap year system, your next Earth Birthday is approximately: ${nextBirthday(myG.age, "Earth")}<br>
+    <br><br>
     you are ${myG.mercury()} years old in Mercury years.<br>
     ${myG.yearsLeft("Mercury")}<br>
-    <br>
+    Your next Mercurian Birthday is: ${nextBirthday(myG.age, "Mercury")}<br>
+    <br><br>
     you are ${myG.venus()} years old in Venus years.<br>
     ${myG.yearsLeft("Venus")}<br>
-    <br>
+    <br><br>
     you are ${myG.mars()} years old in Mars years.<br>
     ${myG.yearsLeft("Mars")}<br>
-    <br>
+    <br><br>
     you are ${myG.jupiter()} years old in Jupiter years.<br>
     ${myG.yearsLeft("Jupiter")}<br>
     `);
