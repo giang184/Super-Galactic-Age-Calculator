@@ -1,0 +1,1 @@
+import {Galatic} from './../src/galatic.js'
