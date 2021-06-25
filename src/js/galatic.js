@@ -28,7 +28,7 @@ export class Galatic {
       young /= .24;
       old /=.24; 
 
-      if(young>0){
+      if(young>0) {
         return `You have ${young.toFixed(2)} years left to live on Mercury`;
       }
       else {

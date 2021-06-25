@@ -60,7 +60,7 @@ describe('Galatic', () => {
   test('yearsLeft function should calculate how many years left you have on Mars based on life expectancy', () => {
     const andrew = new Galatic(37); 
     expect(andrew.yearsLeft("Mars")).toEqual("You have 22.34 years left to live on Mars");
-  });
+  }); 
 
   test('yearsLeft function should calculate how many years you have surpassed your life Expectancy on Mars', () => {
     const andrew = new Galatic(100); 
