@@ -27,15 +27,54 @@ describe('Galatic', () => {
     expect(andrew.jupiter()).toEqual("8.43");
   });
 
-  test('yearsLeftOnEarth function should calculate how many years left you have on Earth based on life Expectancy', () => {
+  test('yearsLeft function should calculate how many years left you have on Earth based on life Expectancy', () => {
     const andrew = new Galatic(37); 
-    expect(andrew.yearsLeftOnEarth()).toEqual("You have 42 years left to live on Earth");
+    expect(andrew.yearsLeft("Earth")).toEqual("You have 42.00 years left to live on Earth");
   });
 
-  test('yearsLeftOnEarth function should calculate how many years left you have on Earth based on life Expectancy', () => {
+  test('yearsLeft function should calculate how many years you have surpassed your life Expectancy on Earth', () => {
     const andrew = new Galatic(100); 
-    expect(andrew.yearsLeftOnEarth()).toEqual("You have exceeded your left expectancy by 21 years.");
+    expect(andrew.yearsLeft("Earth")).toEqual("You have exceeded your left expectancy by 21.00 Earth years.");
   });
 
+  test('yearsLeft function should calculate how many years left you have on Mercury based on life expectancy', () => {
+    const andrew = new Galatic(37); 
+    expect(andrew.yearsLeft("Mercury")).toEqual("You have 175.00 years left to live on Mercury");
+  });
+
+  test('yearsLeft function should calculate how many years you have surpassed your life Expectancy on Mercury', () => {
+    const andrew = new Galatic(100); 
+    expect(andrew.yearsLeft("Mercury")).toEqual("You have exceeded your left expectancy by 87.50 Mercury years.");
+  });
+
+  test('yearsLeft function should calculate how many years left you have on Venus based on life expectancy', () => {
+    const andrew = new Galatic(37); 
+    expect(andrew.yearsLeft("Venus")).toEqual("You have 67.74 years left to live on Venus");
+  });
+
+  test('yearsLeft function should calculate how many years you have surpassed your life Expectancy on Venus', () => {
+    const andrew = new Galatic(100); 
+    expect(andrew.yearsLeft("Venus")).toEqual("You have exceeded your left expectancy by 33.87 Venus years.");
+  });
+
+  test('yearsLeft function should calculate how many years left you have on Mars based on life expectancy', () => {
+    const andrew = new Galatic(37); 
+    expect(andrew.yearsLeft("Mars")).toEqual("You have 22.34 years left to live on Mars");
+  });
+
+  test('yearsLeft function should calculate how many years you have surpassed your life Expectancy on Mars', () => {
+    const andrew = new Galatic(100); 
+    expect(andrew.yearsLeft("Mars")).toEqual("You have exceeded your left expectancy by 11.17 Mars years.");
+  });
+
+  test('yearsLeft function should calculate how many years left you have on Jupiter based on life expectancy', () => {
+    const andrew = new Galatic(37); 
+    expect(andrew.yearsLeft("Jupiter")).toEqual("You have 3.54 years left to live on Jupiter");
+  });
+
+  test('yearsLeft function should calculate how many years you have surpassed your life Expectancy on Jupiter', () => {
+    const andrew = new Galatic(100); 
+    expect(andrew.yearsLeft("Jupiter")).toEqual("You have exceeded your left expectancy by 1.77 Jupiter years.");
+  });
 
 });
