@@ -2,7 +2,7 @@ import $ from 'jquery'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './../css/styles.css'
-import {Galatic} from './galatic.js'
+import {Galactic} from './galactic.js'
 
 const calculateAge = (date) => {
   const today = new Date();
@@ -13,7 +13,7 @@ const calculateAge = (date) => {
 }
 
 $(document).ready(function () {
-  $("form#galatic").submit(function (event) {
+  $("form#galactic").submit(function (event) {
     event.preventDefault();
 
     const dob = $("#born").val();
@@ -22,7 +22,7 @@ $(document).ready(function () {
       array[i]=parseInt(array[i]);
     }
 
-    let myG = new Galatic(calculateAge(array));
+    let myG = new Galactic(calculateAge(array));
 
     $("#result").html(`
     you are ${myG.age} years old in Earth years.<br>

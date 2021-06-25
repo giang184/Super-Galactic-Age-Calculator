@@ -1,4 +1,4 @@
-# SUPER GALATIC AGE CALCULATOR
+# SUPER GALACTIC AGE CALCULATOR
 ## By Andrew Giang
 
 ---
@@ -19,8 +19,8 @@
 ---
 
 ### Installation Instructions
-1. Visit [this webpage](https://giang184.github.io/pizza-hot/). 
-2. Or clone [this]( https://github.com/giang184/pizza-hot) repository to your desktop
+1. Visit [this webpage](https://giang184.github.io/Super-Galactic-Age-Calculator/). 
+2. Or clone [this](https://github.com/giang184/Super-Galactic-Age-Calculator) repository to your desktop
 3. Enter new directory `cd REPO DIR`
 4. Install dependencies with `npm install`
 5. To run it locally, use the npm dev command `npm run start`
