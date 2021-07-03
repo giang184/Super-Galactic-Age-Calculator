@@ -20,11 +20,12 @@
 
 ### Installation Instructions
 1. clone [this](https://github.com/giang184/Super-Galactic-Age-Calculator) repository to your desktop
-2. Enter new directory `cd REPO DIR`
+2. Enter new directory
 3. Install dependencies with `npm install`
 4. To run it locally, use the npm dev command `npm run start`
 5. Open your web browser and navigate to http://localhost:1111
 6. For a production build, use `npm run build`
+7. To run the tests for this project, use `npm run test`
 ---
 ### Known Issues:
 * NO KNOWN ISSUES
