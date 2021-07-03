@@ -20,7 +20,7 @@
 
 ### Installation Instructions
 1. clone [this](https://github.com/giang184/Super-Galactic-Age-Calculator) repository to your desktop
-2. Enter new directory
+2. Enter the downloaded directory
 3. Install dependencies with `npm install`
 4. To run it locally, use the npm dev command `npm run start`
 5. Open your web browser and navigate to http://localhost:1111
@@ -32,7 +32,7 @@
 ---
 ### Test Suite/Specification
 
-> See also [the Jest Test File](TESTSURL) for Jest Test Suite which includes 14 passing tests. View Test Results from Project Directory by Running `yarn run test` or if you prefer npm `npm run test`
+> See also the Jest Test Suite which includes 14 passing tests. View Test Results from Project Directory by Running `npm run test`
 
 
 
